@@ -1,0 +1,19 @@
+.employee-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 30px;
+}
+
+.employee-card {
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: #f3f4f6;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

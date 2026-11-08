@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+#pdf-content {
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+
+.break-inside-avoid {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3 {
+  page-break-after: avoid;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #pdf-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .min-h-screen {
+    padding: 0 !important;
+  }
+
+  table, tr, td {
+    page-break-inside: avoid;
+  }
+
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+}

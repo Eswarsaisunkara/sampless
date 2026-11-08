@@ -1,0 +1,28 @@
+# Root .gitignore
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
